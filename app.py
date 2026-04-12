@@ -1,10 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, send_file
+from flask import Flask, render_template, request, redirect, url_for
 import os
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import io
-import base64
 from werkzeug.utils import secure_filename
 from processing.analysis import process_data
 
