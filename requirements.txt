@@ -1,7 +1,7 @@
-Flask
-pandas
-openpyxl
-werkzeug
-matplotlib 
-seaborn
-gunicorn
+Flask==2.3.3
+pandas==2.1.4
+openpyxl==3.1.2
+Werkzeug==2.3.7
+matplotlib==3.8.2
+seaborn==0.13.2
+gunicorn==21.2.0
