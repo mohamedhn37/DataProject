@@ -12,6 +12,13 @@
         <div class="row">
             <h2>📊 Sélectionnez une Analyse de Données Aériennes</h2>
         </div>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-danger" role="alert">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
         <div class="row">
             <form action="/result" method="post">
                 <input type="hidden" name="filename" value="{{ filename }}">
